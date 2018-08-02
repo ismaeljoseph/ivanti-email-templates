@@ -14,9 +14,11 @@
     <meta class="mktoNumber" id="menuTopSpacer" mktoname="Menu Top Spacer" default="10" min="1" max="30" units="px" step="1" mktomodulescope="true" /> 
     <meta class="mktoNumber" id="menuBottomSpacer" mktoname="Menu Bottom Spacer" default="10" min="1" max="30" units="px" step="1" mktomodulescope="true" />
     
-    <!-- Banner Variables -->  
+    <!-- Banner Variables --> 
+    <meta class="mktoColor" id="imageBannerBackgroundColor" mktoname="Banner Image" default="#e4e4e4" mktomodulescope="true" />
+    
     <meta class="mktoColor" id="mainBanners9BackgroundColor" mktoname="Banner Background Color" default="#e3e4e4" mktomodulescope="true" /> 
-    <meta class="mktoImg" id="mainBanners9BackgroundImage" mktoname="Background Background Image" default="http://templates.marketo.net/event7/bg1.jpg" mktomodulescope="true" /> 
+    <meta class="mktoImg" id="mainBanners9BackgroundImage" mktoname="Banner Background Image" default="http://templates.marketo.net/event7/bg1.jpg" mktomodulescope="true" /> 
     <meta class="mktoColor" id="mainBanners9ButtonBackgroundColor" mktoname="Button Background Color" default="#ffffff" mktomodulescope="true" /> 
     <meta class="mktoColor" id="mainBanners9BorderColor" mktoname="Button Border Color" default="#da291c" mktomodulescope="true" /> 
     <meta class="mktoNumber" id="mainBanners9BorderSize" mktoname="Button Border Width" default="1" min="0" max="5" units="px" step="1" mktomodulescope="true" /> 
@@ -1192,6 +1194,33 @@ font-family: Arial, sans-serif !important;
                       </tbody> 
                     </table>
                     <!-- End Main Menu -->
+                    
+                    <!-- Main Image Banner -->
+                    <table id="image20" style="border-spacing: 0; border-collapse: collapse;" cellspacing="0" cellpadding="0" width="100%" border="0" align="center" class="mktoModule m_image20" mktoname="Image"> 
+                      <tbody> 
+                        <tr> 
+                          <td class="module" style="mso-line-height-rule: exactly;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;background-color:${imageBannerBackgroundColor};" valign="top" bgcolor="${imageBannerBackgroundColor}"> 
+                            <table class="full unboxed" style="border-spacing: 0; border-collapse: collapse; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; width: 660px;" cellspacing="0" cellpadding="0" width="660" border="0" align="center"> 
+                              <tbody> 
+                                <tr> 
+                                  <td class="contents" style="mso-line-height-rule: exactly; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;"> 
+                                    <table class="col d100 t100 p100 unboxed" style="border-spacing: 0; border-collapse: collapse; width: 660px;" width="660" align="center"> 
+                                      <tbody> 
+                                        <tr> 
+                                          <td style="mso-line-height-rule: exactly; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse; padding: 0;"> 
+                                            <div class="mktoImg responsive" mktoname="Hero" id="hero" mktolockimgstyle="false">
+                                              <a><img class="responsive" src="http://go.ivanti.com/rs/635-QZI-186/images/banner-image.jpg" style="text-decoration: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; outline: none; -ms-interpolation-mode: bicubic; line-height: 100%; max-width: 660px; display: block; height: auto; width: 100%;" alt="hero" width="660" height="auto" /></a>
+                                            </div> </td> 
+                                        </tr> 
+                                      </tbody> 
+                                    </table> </td> 
+                                </tr> 
+                              </tbody> 
+                            </table> </td> 
+                        </tr> 
+                      </tbody> 
+                    </table>
+                    <!-- End Main Image Banner -->
                     
                     <!-- Main Banner -->
 					<table class="mktoModule module_wrapper m_main-banners9" id="main-banners9" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: -1pt; mso-table-rspace: -1pt;" align="center" width="100%" cellspacing="0" cellpadding="0" border="0" mktoname="Main-banners"> 

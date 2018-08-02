@@ -9,14 +9,17 @@
     <meta class="mktoNumber" id="headersSpacer" mktoname="Logo Spacer" default="22" min="1" max="30" units="px" step="1" /> 
     <meta class="mktoNumber" id="headersmenuSpacer" mktoname="Bottom Spacer" default="10" min="1" max="20" units="px" step="1" mktomodulescope="true" /> 
     <meta class="mktoColor" id="headersmenuBackgroundColor" mktoname="Header Menu Background Color" default="#f2f2f2" mktomodulescope="true" /> 
-    <meta class="mktoColor" id="mainBannerBackgroundColor" mktoname="Module Background" default="#e3e4e4" mktomodulescope="true" /> 
-    <meta class="mktoImg" id="mainBannerBackgroundImage" mktoname="Background Image" default="http://templates.marketo.net/event7/bg1.jpg" mktomodulescope="true" /> 
-    <meta class="mktoColor" id="mainBannerButtonBackgroundColor" mktoname="Button Background Color" default="#ffffff" mktomodulescope="true" /> 
-    <meta class="mktoColor" id="mainBannerButtonBorderColor" mktoname="Button Border Color" default="#da291c" mktomodulescope="true" /> 
-    <meta class="mktoNumber" id="mainBannerButtonBorderSize" mktoname="Button Border Width" default="1" min="0" max="4" units="px" step="1" mktomodulescope="true" /> 
-    <meta class="mktoString" id="mainBannerButtonLink" mktoname="Button Link" default="http://mylink" mktomodulescope="true" /> 
-    <meta class="mktoString" id="mainBannerButtonLinkText" mktoname="Button Text" default="LEARN MORE" mktomodulescope="true" /> 
-    <meta class="mktoColor" id="mainBannerButtonLinkTextColor" mktoname="Button Text Color" default="#da291c" mktomodulescope="true" /> 
+
+    <!-- Banner Variables -->  
+    <meta class="mktoColor" id="mainBanners9BackgroundColor" mktoname="Banner Background Color" default="#e3e4e4" mktomodulescope="true" /> 
+    <meta class="mktoImg" id="mainBanners9BackgroundImage" mktoname="Background Background Image" default="http://templates.marketo.net/event7/bg1.jpg" mktomodulescope="true" /> 
+    <meta class="mktoColor" id="mainBanners9ButtonBackgroundColor" mktoname="Button Background Color" default="#ffffff" mktomodulescope="true" /> 
+    <meta class="mktoColor" id="mainBanners9BorderColor" mktoname="Button Border Color" default="#da291c" mktomodulescope="true" /> 
+    <meta class="mktoNumber" id="mainBanners9BorderSize" mktoname="Button Border Width" default="1" min="0" max="5" units="px" step="1" mktomodulescope="true" /> 
+    <meta class="mktoString" id="mainBanners9LinkText" mktoname="Button Text" default="LEARN MORE" mktomodulescope="true" />
+    <meta class="mktoColor" id="mainBanners9LinkTextColor" mktoname="Button Text Color" default="#da291c" mktomodulescope="true" />
+    <meta class="mktoString" id="mainBanners9Link" mktoname="Button Link" default="http://mylink" mktomodulescope="true" />
+     
     <meta class="mktoColor" id="heading1BackgroundColor" mktoname="1st Section Background color" default="#ffffff" mktomodulescope="true" />
     <meta class="mktoNumber" id="heading1Spacertop" mktoname="Spacer Above 1st Section" default="20" min="1" max="30" units="px" step="1" mktomodulescope="true" />
     <meta class="mktoNumber" id="heading1Spacerbottom" mktoname="Spacer Below 1st Section" default="20" min="1" max="30" units="px" step="1" mktomodulescope="true" />
@@ -52,29 +55,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" /> 
     <meta name="robots" content="noindex,nofollow" /> 
-    <meta content="telephone=no" name="format-detection" /> 
+    <meta content="telephone=no" name="format-detection" />
+    
     <!-- Web Fonts --> 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" /> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Cormorant+Garamond:400i" rel="stylesheet" /> 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Montserrat:100,300,400,500,700" rel="stylesheet" /> 
+	<!--[if mso]>
+		<style type='text/css'>
+		.primary-font {
+		font-family: Arial, sans-serif !important;
+		}
+		</style>
+		<![endif]--> 
     <!--[if mso]>
-                                <style type='text/css'>
-                                .primary-font {
-                                font-family: "Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-                                }
-                                </style>
-                                <![endif]--> 
-    <!--[if mso]>
-                                <style type='text/css'>
-                                .secondary-font {
-                                font-family: "Open Sans", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-                                }
-                                </style>
-                                <![endif]--> 
+		<style type='text/css'>
+		.secondary-font {
+		font-family: Arial, sans-serif !important;
+		}
+		</style>
+		<![endif]--> 
     <!--[if mso]>
 <style type='text/css'>
 .lato-font {
-font-family: Montserrat,'Open Sans',Roboto,'Helvetica Neue',Arial,sans-serif !important;
+font-family: Arial, sans-serif !important;
 }
 </style>
 <![endif]--> 
@@ -1013,19 +1017,21 @@ font-family: Montserrat,'Open Sans',Roboto,'Helvetica Neue',Arial,sans-serif !im
                         </tr> 
                       </tbody> 
                     </table>
-                    <table class="mktoModule module_wrapper m_main-banners9" id="main-banners9" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: -1pt; mso-table-rspace: -1pt;" align="center" width="100%" cellspacing="0" cellpadding="0" border="0" mktoname="Main-banners"> 
+                    
+                    <!-- Main Banner -->
+					<table class="mktoModule module_wrapper m_main-banners9" id="main-banners9" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: -1pt; mso-table-rspace: -1pt;" align="center" width="100%" cellspacing="0" cellpadding="0" border="0" mktoname="Main-banners"> 
                       <tbody> 
                         <tr> 
-                          <td class="module" style="mso-line-height-rule: exactly;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;word-break: break-word;background-image:${mainBannerBackgroundImage};padding-left: 0;background-position: center center;background-size: cover;background-color:${mainBannerBackgroundColor};padding-top: 0;padding-right: 0;padding-bottom: 0;background-repeat:
-no-repeat;background:${mainBannerBackgroundImage};" valign="top" bgcolor="${mainBannerBackgroundColor}" background="${mainBannerBackgroundImage}"> 
+                          <td class="module" style="mso-line-height-rule: exactly;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;word-break: break-word;background-image:${mainBanners9BackgroundImage};padding-left: 0;background-position: center center;background-size: cover;background-color:${mainBanners9BackgroundColor};padding-top: 0;padding-right: 0;padding-bottom: 0;background-repeat: 
+no-repeat;background:${mainBanners9BackgroundImage};" valign="top" bgcolor="${mainBanners9BackgroundColor}" background="${mainBanners9BackgroundImage}"> 
                             <center> 
                               <!--[if gte mso 9]>
-								<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:660px;height:393px">
-								<v:fill type="frame" src="${mainBannerBackgroundImage}" color="${mainBannerBackgroundColor}" />
-								<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
-								<div>
-								<div style="font-size: 0;line-height: 0;margin: 0;border: 0">
-							  <![endif]-->  
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:660px;height:393px">
+					<v:fill type="frame" src="${mainBanners9BackgroundImage}" color="${mainBanners9BackgroundColor}" />
+					<v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+<div>
+<div style="font-size: 0;line-height: 0;margin: 0;border: 0">
+					<![endif]--> 
                               <table class="full" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: -1pt; mso-table-rspace: -1pt; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; width: 600px;" align="center" width="600" cellspacing="0" cellpadding="0" border="0"> 
                                 <tbody> 
                                   <tr style="outline: medium none;"> 
@@ -1038,23 +1044,23 @@ no-repeat;background:${mainBannerBackgroundImage};" valign="top" bgcolor="${main
                                           <tr style="outline: medium none;"> 
                                             <td class="primary-font text" style="mso-line-height-rule: exactly;word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;font-size:38px;color: #ffffff;font-family:'Montserrat', Arial, sans-serif;text-align: center;"> 
                                               <div class="mktoText" mktoname="Text" id="text">
-                                                <p><span>GET READY FOR<br /><b>THE EVENT OF THE YEAR</b><br />May 20th 2017</span></p>
+                                                <font face="Lato" class="lato-font">GET READY FOR<br /><b>THE EVENT OF THE YEAR</b><br />May 20th 2017</font>
                                               </div> </td> 
-                                          </tr> 
+                                          </tr>  
                                           <tr style="outline: medium none;"> 
                                             <td class="spacer s1" style="word-break: break-word;-webkit-hyphens: none;-moz-hyphens: none;hyphens: none;border-collapse: collapse;mso-line-height-rule: exactly;line-height:27px;font-size:27px;" height="27">&nbsp;</td> 
                                           </tr> 
                                           <tr> 
                                             <td class="cta" style="mso-line-height-rule: exactly; word-break: break-word; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; border-collapse: collapse;"> 
-                                              <table style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: -1pt; mso-table-rspace: -1pt; margin: 0 auto;" align="center" cellspacing="0" cellpadding="0" border="0"> 
+                                              <table style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: -1pt; mso-table-rspace: -1pt;" align="center" cellspacing="0" cellpadding="0" border="0"> 
                                                 <tbody> 
                                                   <tr> 
-                                                    <td style="mso-line-height-rule: exactly;border-collapse: collapse;hyphens: none;-moz-hyphens: none;-webkit-hyphens: none;word-break: break-word;-moz-border-radius: 3px;background-clip: padding-box;-webkit-background-clip: padding-box;-moz-background-clip: padding;border-radius: 3px;-webkit-border-radius: 3px;background-color:${mainBannerButtonBackgroundColor}" align="center" valign="middle" bgcolor="${mainBannerButtonBackgroundColor}"><a class="primary-font button" href="${mainBannerButtonLink}" target="_blank" style="font-size: 14px;font-family:'Montserrat', Arial, sans-serif;text-decoration: none;padding-top: 0.8em;padding-bottom: 0.8em;font-weight: 400;background-clip: padding-box;-webkit-background-clip: padding-box;-moz-background-clip: padding;border-radius:
-3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;display: inline-block;border-top-style: solid;border-bottom-style: solid;border-top-color:${mainBannerButtonBorderColor};border-right-color:${mainBannerButtonBorderColor};border-bottom-color:${mainBannerButtonBorderColor};border-left-color:${mainBannerButtonBorderColor};border-right-style:
-solid;color:${mainBannerButtonLinkTextColor};border-left-width:${mainBannerButtonBorderSize};border-bottom-width:${mainBannerButtonBorderSize};border-right-width:${mainBannerButtonBorderSize};border-top-width:${mainBannerButtonBorderSize};padding-right: 20px;padding-left: 20px;border-left-style: solid;background-color:${mainBannerButtonBackgroundColor};"> 
+                                                    <td style="mso-line-height-rule: exactly;border-collapse: collapse;hyphens: none;-moz-hyphens: none;-webkit-hyphens: none;word-break: break-word;-moz-border-radius: 3px;background-clip: padding-box;-webkit-background-clip: padding-box;-moz-background-clip: padding;border-radius: 3px;-webkit-border-radius: 3px;background-color:${mainBanners9ButtonBackgroundColor}" align="center" valign="middle" bgcolor="${mainBanners9ButtonBackgroundColor}"><a class="primary-font button" href="${mainBanners9Link}" target="_blank" style="font-size: 14px;font-family:'Montserrat', Arial, sans-serif;text-decoration: none;padding-top: 0.8em;padding-bottom: 0.8em;font-weight: 400;background-clip: padding-box;-webkit-background-clip: padding-box;-moz-background-clip: padding;border-radius: 
+3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;display: inline-block;border-top-style: solid;border-bottom-style: solid;border-top-color:${mainBanners9BorderColor};border-right-color:${mainBanners9BorderColor};border-bottom-color:${mainBanners9BorderColor};border-left-color:${mainBanners9BorderColor};border-right-style: 
+solid;color:${mainBanners9LinkTextColor};border-left-width:${mainBanners9BorderSize};border-bottom-width:${mainBanners9BorderSize};border-right-width:${mainBanners9BorderSize};border-top-width:${mainBanners9BorderSize};padding-right: 20px;padding-left: 20px;border-left-style: solid;background-color:${mainBanners9ButtonBackgroundColor};"> 
                                                         <!--[if !mso]><!-- --> 
                                                         <!--<![endif]--><span> 
-                                                          <!--[if gte mso 9]>&nbsp;&nbsp;<![endif]-->${mainBannerButtonLinkText} 
+                                                          <!--[if gte mso 9]>&nbsp;&nbsp;<![endif]-->${mainBanners9LinkText} 
                                                           <!--[if gte mso 9]>&nbsp;&nbsp;<![endif]--></span></a></td> 
                                                   </tr> 
                                                 </tbody> 
@@ -1077,6 +1083,8 @@ solid;color:${mainBannerButtonLinkTextColor};border-left-width:${mainBannerButto
                         </tr> 
                       </tbody> 
                     </table>
+                    <!-- End Main Banner -->
+                    
 					<table id="heading1" style="border-spacing: 0; border-collapse: collapse; mso-table-lspace: -1pt; mso-table-rspace: -1pt;" align="center" width="100%" cellspacing="0" cellpadding="0" border="0" class="mktoModule m_heading2" mktoname="Heading1"> 
                       <tbody> 
                         <tr> 
